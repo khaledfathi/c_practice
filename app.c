@@ -7,6 +7,10 @@
 //Github repo: https://github.com/khaledfathi/c_practice.git 
 //Target : Practice C programming 
 //Files :  1/1
+//
+//NOTE: i got problem while compiling cuz i use math lib , i fix it 
+//      by using -l option to link lib called m , and i cant understand what happend 
+//      command :gcc -o outfile c_file -lm
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
