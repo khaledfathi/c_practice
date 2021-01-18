@@ -4,7 +4,7 @@
 //Author : KhaledFathi@protonmail.com
 //Language : C 
 //Ver : 0.1
-//Github : #! 
+//Github repo: https://github.com/khaledfathi/c_practice.git 
 //Target : Practice C programming 
 //Files :  1/1
 #include <stdio.h>
