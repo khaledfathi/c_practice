@@ -17,11 +17,11 @@
 char value_1[50] , value_2[50];
 
 //misc _____________________________start
-u_int8_t is_number (char *num){
+unsigned int is_number (char *num){
     //check if string number can be convert to int/float or not 
     char allowed []= {'1','2','3','4','5','6','7','8','9','0','.','-'};
     unsigned int  i , j , count=0; 
-    u_int8_t dot_flag=0 , minus_flag=0;
+    unsigned int  dot_flag=0 , minus_flag=0;
     
     for (i=0 ; i<strlen(num) ; i++){
         if (num[i]=='.')dot_flag++;
@@ -42,7 +42,7 @@ u_int8_t is_number (char *num){
     }
 }
 
-u_int8_t quit (){
+unsigned int  quit (){
     char out[10] ; 
     printf("\nAny key for Quit , Enter to Continue : ");
     fgets(out , 100 , stdin);// repeated two time cuz it catch the first Enter press
@@ -90,7 +90,7 @@ void app_interface (char *title , char *ui_text ,  void (*fun1)() , void (*fun2)
 //calculations app ________________________start
 
 //general form function 
-u_int8_t input_form (char *text_1 , char *text_2){
+unsigned int  input_form (char *text_1 , char *text_2){
    printf("\n%s" , text_1);
    scanf("%s", value_1);
    printf("%s" , text_2);
