@@ -159,7 +159,7 @@ void resistance_p_i(){
 /*########## Voltage Calculations ###########*/
 void voltage_r_i(){
     while (1){
-        if ( input_form("power : " , "Current : ") ){
+        if ( input_form("Resistance : " , "Current : ") ){
             printf("\n### Voltage = %.3f Volt ###\n", atof(value_1)*atof(value_2) );
         }else {
             printf("\nERROR : Enter Numbers Only!\n");
@@ -197,7 +197,7 @@ void voltage_p_i(){
 /*########## Current Calculations ###########*/
 void current_v_r(){
     while (1){
-        if ( input_form("Volt : " , "Current : ") ){
+        if ( input_form("Volt : " , "Resistance : ") ){
             if (atof(value_2) != 0){//avoid math error [divide by zero]
                 printf("\n### Current = %.3f Amp ###\n", atof(value_1)/atof(value_2)  );
             }else {
@@ -242,7 +242,7 @@ void current_p_r(){
 /*########## Power Calculations ###########*/
 void power_v_r(){
     while (1){
-        if ( input_form("Volt : " , "Current : ") ){
+        if ( input_form("Volt : " , "Resistance : ") ){
             if (atof(value_2) != 0){//avoid math error [divide by zero]
                 printf("\n### Current = %.3f Amp ###\n", (atof(value_1)*atof(value_1))/atof(value_2)  );
             }else {
@@ -256,7 +256,7 @@ void power_v_r(){
 }
 void power_i_r(){
     while (1){
-        if ( input_form("Volt : " , "Power : ") ){
+        if ( input_form("Current : " , "Resistance : ") ){
             printf("\n### Current = %.3f Amp ###\n", (atof(value_1)*atof(value_1))*atof(value_2) );
         }else {
             printf("\nERROR : Enter Numbers Only!\n");
@@ -266,7 +266,7 @@ void power_i_r(){
 }
 void power_v_i(){
     while (1){
-        if ( input_form("Power : " , "Resistance : ") ){
+        if ( input_form("Volt : " , "Current : ") ){
             printf("\n### Current = %.3f Amp ###\n", atof(value_1)*atof(value_2)) ;
         }else {
             printf("\nERROR : Enter Numbers Only!\n");
@@ -296,7 +296,7 @@ void current_app (){
 
 void power_app(){
     char ui_text[] = "1- By Voltage and Resistance\n2- By Current and Resistance\n3- By Voltage and Current\nQ- For quit\n>>> ";
-    app_interface("POWER" , ui_text , &current_v_r , &current_v_p , &current_p_r); 
+    app_interface("POWER" , ui_text , &power_v_r , &power_i_r , &power_v_i); 
 }
 //apps entry_________________end 
 
