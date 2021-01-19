@@ -1,6 +1,6 @@
 //Description : TUI App for calculate Ohm laws ;
 //Created Date: 17/01/2021
-//Finshed Date : #! 
+//Finshed Date : 19/01/2021 
 //Author : KhaledFathi@protonmail.com
 //Language : C 
 //Ver : 0.1
