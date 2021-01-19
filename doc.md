@@ -11,7 +11,7 @@
 
 *descreption :* 
 - check if string can be convert to number or not.
-- return 0\|1
+- return 0|1
 
 *parameter :*
 
@@ -23,7 +23,7 @@
 *descreption :* 
 - print interface fot user to 'Quit' or 'Continue'
 - catch Enter key or other character 
-- return 0\|1
+- return 0|1
 ---
 ***selection_error()***
 
@@ -61,7 +61,7 @@
 - build  user input form , to input 1st value and 2nd value 
 - save values to globale varibale for next calculation 
 - check if this number can be calculate or no 
-- return 0/|1
+- return 0|1
 
 *parameter :*
 - (char \*text_1) : 1st value for calculation 
@@ -77,16 +77,16 @@
 ***voltage_r_i() , voltage_r_p() , voltage_p_i()***
 
 *description :*
-- run calculation and print results for resistance app 
+- run calculation and print results for voltage app 
 ---
 ***current_v_r() , current_v_p() , current_p_r()***
 
 *description :*
-- run calculation and print results for resistance app 
+- run calculation and print results for current app 
 ---
 ***power_v_r() , power_i_r() , power_v_i()***
 
 *description :*
-- run calculation and print results for resistance app 
+- run calculation and print results for power app 
 
 
