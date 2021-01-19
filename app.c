@@ -201,7 +201,7 @@ void current_v_r(){
             if (atof(value_2) != 0){//avoid math error [divide by zero]
                 printf("\n### Current = %.3f Amp ###\n", atof(value_1)/atof(value_2)  );
             }else {
-            printf("\nERROR : Current Can't be Zero!\n");
+            printf("\nERROR : Resistance Can't be Zero!\n");
             }
         }else {
             printf("\nERROR : Enter Numbers Only!\n");
@@ -244,7 +244,7 @@ void power_v_r(){
     while (1){
         if ( input_form("Volt : " , "Resistance : ") ){
             if (atof(value_2) != 0){//avoid math error [divide by zero]
-                printf("\n### Current = %.3f Amp ###\n", (atof(value_1)*atof(value_1))/atof(value_2)  );
+                printf("\n### Power = %.3f Watt ###\n", (atof(value_1)*atof(value_1))/atof(value_2)  );
             }else {
             printf("\nERROR : Resistance Can't be Zero!\n");
             }
@@ -257,7 +257,7 @@ void power_v_r(){
 void power_i_r(){
     while (1){
         if ( input_form("Current : " , "Resistance : ") ){
-            printf("\n### Current = %.3f Amp ###\n", (atof(value_1)*atof(value_1))*atof(value_2) );
+            printf("\n### Power = %.3f Watt ###\n", (atof(value_1)*atof(value_1))*atof(value_2) );
         }else {
             printf("\nERROR : Enter Numbers Only!\n");
         };
@@ -267,7 +267,7 @@ void power_i_r(){
 void power_v_i(){
     while (1){
         if ( input_form("Volt : " , "Current : ") ){
-            printf("\n### Current = %.3f Amp ###\n", atof(value_1)*atof(value_2)) ;
+            printf("\n### Power = %.3f Watt ###\n", atof(value_1)*atof(value_2)) ;
         }else {
             printf("\nERROR : Enter Numbers Only!\n");
         };
