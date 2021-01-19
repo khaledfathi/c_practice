@@ -11,6 +11,18 @@
 //NOTE: i got problem while compiling cuz i use math lib , i fix it 
 //      by using -l option to link lib called m , and i cant understand what happend 
 //      command :gcc -o outfile c_file -lm
+//
+//
+
+//Description : TUI App for calculate Ohm laws ;
+//Created Date: 17/01/2021
+//Finshed Date : #! 
+//Author : KhaledFathi@protonmail.com
+//Language : C 
+//Ver : 0.1
+//Github repo: https://github.com/khaledfathi/c_practice.git 
+//Target : Practice C programming 
+//Files :  1/1
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -21,19 +33,11 @@
 char value_1[50] , value_2[50];
 
 //misc _____________________________start
-<<<<<<< HEAD
-unsigned short  is_number (char *num){
-    //check if string number can be convert to int/float or not 
-    char allowed []= {'1','2','3','4','5','6','7','8','9','0','.','-'};
-    unsigned short  i , j , count=0; 
-    unsigned short  dot_flag=0 , minus_flag=0;
-=======
 unsigned int is_number (char *num){
     //check if string number can be convert to int/float or not 
     char allowed []= {'1','2','3','4','5','6','7','8','9','0','.','-'};
     unsigned int  i , j , count=0; 
     unsigned int  dot_flag=0 , minus_flag=0;
->>>>>>> master
     
     for (i=0 ; i<strlen(num) ; i++){
         if (num[i]=='.')dot_flag++;
@@ -54,11 +58,7 @@ unsigned int is_number (char *num){
     }
 }
 
-<<<<<<< HEAD
-unsigned short quit (){
-=======
 unsigned int  quit (){
->>>>>>> master
     char out[10] ; 
     printf("\nAny key for Quit , Enter to Continue : ");
     fgets(out , 100 , stdin);// repeated two time cuz it catch the first Enter press
@@ -106,11 +106,7 @@ void app_interface (char *title , char *ui_text ,  void (*fun1)() , void (*fun2)
 //calculations app ________________________start
 
 //general form function 
-<<<<<<< HEAD
-unsigned short input_form (char *text_1 , char *text_2){
-=======
 unsigned int  input_form (char *text_1 , char *text_2){
->>>>>>> master
    printf("\n%s" , text_1);
    scanf("%s", value_1);
    printf("%s" , text_2);
@@ -347,5 +343,4 @@ int main (){
     return 0 ; 
 }
 /*################# END OF FILE #############*/
-
 
