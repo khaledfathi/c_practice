@@ -12,17 +12,6 @@
 //      by using -l option to link lib called m , and i cant understand what happend 
 //      command :gcc -o outfile c_file -lm
 //
-//
-
-//Description : TUI App for calculate Ohm laws ;
-//Created Date: 17/01/2021
-//Finshed Date : #! 
-//Author : KhaledFathi@protonmail.com
-//Language : C 
-//Ver : 0.1
-//Github repo: https://github.com/khaledfathi/c_practice.git 
-//Target : Practice C programming 
-//Files :  1/1
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
