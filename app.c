@@ -314,7 +314,6 @@ int main (){
             continue ; 
         };
         if (select[0] == '1'){
-            printf("Option resistance\n"); //Coding Here 
             resistance_app(); 
         }else if(select[0] == '2'){
             voltage_app();
